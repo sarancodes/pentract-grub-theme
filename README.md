@@ -1,2 +1,3 @@
-# pentract-grub-theme
-Pentract GRUB Theme
+# Pentract GRUB Theme
+### This is a custom theme for the grub bootloader.
+
