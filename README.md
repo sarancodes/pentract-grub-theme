@@ -14,5 +14,12 @@
 ### Bonus Tips
 - To extract the tar file use `tar -xvf pentract.tar.xz`
 - To customize the font colors edit the color property in the  _**theme.txt**_  file
+### Modify grub bootloader screen resolution 
+- First type `sudo nano /etc/default/grub` in the terminal
+- Find the line `#GRUB_GFXMODE=640x480` which is the default resolution
+- Then remove the # and change the 640x480 with your preferred mode
+- Example `GRUB_GFXMODE=1280x800`
+- Save it by pressing `Ctrl+o` and exit `Ctrl+x`
+- Then type `sudo update-grub`
 
 
