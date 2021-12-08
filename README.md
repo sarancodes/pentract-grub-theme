@@ -18,6 +18,7 @@
 
 ### Bonus Tips
 - To extract the tar file use `tar -xvf pentract.tar.xz`
+- Or else use the `unzip filename` command to extract the zip file.
 - To customize the font colors edit the color property in the  _**theme.txt**_  file
 - In case of `permission denied` right click and change the property of install.sh file to enable and run as program option.
 - Then re-run the install.sh script
