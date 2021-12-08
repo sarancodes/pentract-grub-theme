@@ -1,5 +1,8 @@
 # Pentract GRUB Theme
 ### This is a custom theme for the grub bootloader.
+![Screenshot 1](https://github.com/sarancodes/pentract-grub-theme/blob/main/screenshot1.png)
+![Screenshot 2](https://github.com/sarancodes/pentract-grub-theme/blob/main/screenshot2.png)
+![Variant](https://github.com/sarancodes/pentract-grub-theme/blob/main/variant1.png)
 # Installation
 - Clone this repository
 - Change the directory to the pentract theme folder 
