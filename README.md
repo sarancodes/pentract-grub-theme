@@ -31,7 +31,7 @@
 - Save it by pressing `Ctrl+o` and exit `Ctrl+x`
 - Then type `sudo update-grub`
 
-#### You can also download this theme from ![Pentract](https://www.gnome-look.org/p/1661288)
+#### You can also download this theme from [Pentract](https://www.gnome-look.org/p/1661288)
 Made with :gift_heart: by saran
 
 
