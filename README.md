@@ -7,7 +7,7 @@
 - The script will prompt you to enter your name if you want to display it or else leave it blank and press enter
 - The theme will be then installed on your system
 - To uninstall use `sudo ./uninstall.sh` command 
-##### Note: This theme does not work with ZFS File system.You need to change the filesystem to any other.
+##### Note: This theme does not work with ZFS File system.You need to change to any other supported filesystem.
 
 #### Bootloader Menu
 ![Screenshot 1](https://github.com/sarancodes/pentract-grub-theme/blob/main/screenshot1.png)
