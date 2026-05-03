@@ -67,6 +67,9 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
   cp -an /etc/default/grub /etc/default/grub.bak
   sed -i '/GRUB_THEME=/d' /etc/default/grub
 
+  # Remove the drop-in installed by install.sh on Ubuntu 25.04+ systems.
+  rm -f /etc/default/grub.d/zzz-${THEME_NAME}.cfg
+
 
 
   prompt -i "\n finalizing your uninstallation.......\n \n."
@@ -75,7 +78,13 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
   if has_command update-grub; then
     update-grub
   elif has_command grub-mkconfig; then
-    grub-mkconfig -o /boot/grub/grub.cfg
+    if [ -d /boot/efi/EFI/ubuntu ]; then
+      grub-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg
+    elif [ -d /boot/efi/EFI/debian ]; then
+      grub-mkconfig -o /boot/efi/EFI/debian/grub.cfg
+    else
+      grub-mkconfig -o /boot/grub/grub.cfg
+    fi
   elif has_command grub2-mkconfig; then
     if has_command zypper; then
       grub2-mkconfig -o /boot/grub2/grub.cfg
